@@ -108,29 +108,6 @@
 			$('#emailSignUp').focus();
 		});
 
-		// Scroll to login
-		$('#myPreferencesFtr').on('click',function (e) {
-			e.preventDefault();
-
-			var target = this.hash,
-			$target = $(target);
-
-			$('html, body').stop().animate({
-				'scrollTop': $target.offset().top
-			}, 900, 'swing', function () {
-				window.location.hash = target;
-
-				if ( !$('.utility-bar').is(':visible') ) {
-					$('.utility-bar').stop().slideDown('normal', function () {
-						$('#navbar-toggle').addClass( 'navbar-toggle-active', $('.utility-bar').is(':visible') );
-						$('#username').focus();
-					});
-				} else {
-					$('#username').focus();
-				}
-			});
-		});
-
 		// Scroll to top
 		function scrollTop() {
 			$('#scroll-top').click(function (e) {
