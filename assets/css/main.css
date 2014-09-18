@@ -2499,3 +2499,148 @@ hr {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
 
 }
+
+/* ==========================================================================
+   My profile
+   ========================================================================== */
+   
+   #pazz-container{
+	   position:relative;
+	   height:900px;
+	   max-width:90%;
+	   }
+	   
+	.pazz-content{
+		width:100%;
+		height:370px;
+		}
+		
+		
+	.pazz-line{
+		padding: 5px 0 5px;
+		border-top: 1px solid #ad1d43;
+		margin-right: 148px;
+		margin-left: 17px;
+		}
+	
+	.pazz-col-inner{
+		
+		display:block;
+		padding: 20px;
+		float:left;
+		width:37%;
+		}
+		
+.pazz-col-sm{
+		
+		display:block;
+		padding: 5px 10px;
+		float:left;
+		line-height: normal !important;
+		width:37%;
+	
+		}
+		
+	.pazz-img{
+		width:70%;
+		height:auto;
+		padding-bottom: 20px;
+		}
+		
+	.pazz-label{
+		color: #AF2242;
+		font-size: 0.83em;
+		margin:0;
+		}
+
+	.pazz-label-bottom{
+		color: #AF2242 !important;
+		text-align:left;
+		font-size: 1.3em;
+		margin:0;
+		}
+		
+	.pazz-result{
+		color:#333 !important;
+		text-align:center;
+		font-size: 1.3em;
+		margin:0;
+		}
+
+	.odd{
+		display:block;
+		background: rgb(200, 54, 54); /* The Fallback */
+   		background: rgba(200, 54, 54, 0.2);
+		margin: 5px 15px;
+		height:60px;
+		width:585px;	
+			}
+	
+
+
+
+/* 0176 =================================================== */
+@media only screen and (max-width: 1076px) {
+	 	#pazz-container{
+	   	max-width:100%;
+	   	}
+		
+		.pazz-content{
+		width:100%;
+				}
+
+		.pazz-col-inner{
+		padding: 15px;
+		}
+		
+		.pazz-col-sm{
+		width:35%;
+		}
+		.pazz-img{
+		width:80%;
+		}
+		
+		
+}
+
+/* 768 =================================================== */
+@media only screen and (max-width: 768px) {
+	.odd{
+		width:450px;	
+			}
+	
+}
+
+
+/* 480 =================================================== */
+@media only screen and (max-width: 480px) {
+	 	#pazz-container{
+	   	max-width:100%;
+	   	}
+		.pazz-content{
+		width:100%;
+		}
+		.pazz-col-inner{
+		padding: 10px;
+		}
+		.pazz-col-sm{
+		width:35%;
+		}
+		.pazz-img{
+		width:90%;
+		}
+
+		.odd{
+			width:430px;
+			margin: 5px 5px;	
+		}
+	}
+
+/* 480 =================================================== */
+@media only screen and (max-width: 320px) {
+	
+	.odd{
+			width:350px;
+			margin: 5px 5px;	
+		}
+}

@@ -44,42 +44,6 @@
 				<div class="top-bar">
 					<div class="top-bar-inner">
 						<div class="utility-bar">
-							<div class="utility-bar-inner">
-								<div class="wrap wrap-utility clearfix">
-									<div class="utility-bar-items clearfix">
-										<form id="login-form" class="utility-login" method="post" action="#">
-											<fieldset class="clearfix">
-												<legend class="login-legend">Already registered?</legend>
-												<div class="login-controls">
-													<div class="form-row clearfix">
-														<div class="form-group clearfix">
-															<label class="label-hidden user-field" for="username">Email or username</label>
-															<input id="username" class="form-control" type="text" placeholder="Email or username" />
-														</div><!-- /form-group -->
-														<div class="form-group clearfix">
-															<label class="label-hidden password-field" for="password">Password</label>
-															<input id="password" class="form-control" type="text" placeholder="Password" />
-														</div><!-- /form-group -->
-														<div class="forgot-login-container">
-															<a class="forgot-login" href="#">Forgot your username or password?</a>
-														</div><!-- /forgot-login-container -->
-													</div><!-- /form-row -->
-													<button id="login-btn" class="btn btn-default" type="submit">Log in</button>
-												</div><!-- /login-controls -->
-											</fieldset>
-										</form><!-- /login-form -->
-										<div class="select-container select-lang-container">
-											<select id="select-lang" class="utility-select-lang form-control">
-												<option value="">Select your language</option>
-												<option value="">Español</option>
-												<option value="">English</option>
-												<optgroup label="--"></optgroup>
-												<option value="">Change park</option>
-											</select><!-- /select-lang -->
-										</div><!-- /select-container -->
-									</div><!-- /utility-bar-items -->
-								</div><!-- /wrap -->
-							</div><!-- /utility-bar-inner -->
 						</div><!-- /utility-bar -->
 						<header class="master-header">
 							<div class="wrap wrap-header clearfix">
@@ -101,7 +65,7 @@
 										<li class="nav-item">
 											<a href="index.html">Home</a>
 										</li>
-										<li id="active-main-nav" class="nav-item">
+										<li id="" class="nav-item">
 											<a href="about.html">General info</a>
 										</li>
 										<li class="nav-item">
@@ -114,38 +78,27 @@
 					</div><!-- /top-bar-inner -->
 				</div><!-- /top-bar -->
 				<div class="master-content">
-					<div class="sponsor-banner">
-						<div class="sponsor-slider-container">
-							<div class="sponsor-slider-inner">
-								<img class="img-responsive" src="assets/img/sponsor_nestle.jpg" />
-							</div><!-- /sponsor-slider-inner -->
-							<div class="wrap wrap-info-heading clearfix">
-								<div class="info-heading-inner">
-									<h2>General Info</h2>
-								</div><!-- /info-heading-inner -->
-							</div><!-- /wrap -->
-						</div><!-- /sponsor-slider-container -->
-						<!-- a class="sponsor-logo" href="#" -->
-							<img class="logo-sponsor" src="assets/img/nestle_logo.jpg">
-						<!-- /a --><!-- /sponsor-logo -->
-					</div><!-- /sponsor-banner -->
+					
 					<div class="wrap clearfix">
 						<div class="col-left">
 							<div class="col-left-inner">
 								<nav class="secondary-nav">
 									<ul class="secondary-nav-menu">
-										<li>
-											<a href="about.html">About us</a>
-										</li>
 										<li id="active-secondary-nav">
+											<a href="about.html">My profile</a>
+										</li>
+										<li>
 											<a href="citizenship_levels.html">CitiZenship levels</a>
 										</li>
 										<li>
-											<a href="member_guide.html">Program rules</a>
+											<a href="member_guide.html">Resume</a>
+										</li>
+                                        <li>
+											<a href="member_guide.html">Bank</a>
 										</li>
 									</ul><!-- /secondary-nav-menu -->
 								</nav><!-- /secondary-nav -->
-								<a id="sign-up-btn" class="btn btn-default btn-lg" href="#internal-sign-up-form">Sign up now</a>
+								<a id="sign-up-btn" class="btn btn-default btn-lg" href="#internal-sign-up-form">Edit my profile</a>
 								<div class="sign-up-collapsible">
 									<form id="internal-sign-up-form" method="post" action="#" novalidate>
 										<fieldset>
@@ -173,48 +126,88 @@
 						</div><!-- /col-left -->
 						<div class="col-main">
 							<div class="col-main-inner clearfix">
-								<section>
-									<h3>CitiZenship levels</h3>
-									<p>
-										There are hundreds of ways to do new things, learn new things, prepare for a better world and earn benefits, all at the same time!
-									</p>
-									<p>
-										As soon as your kids join, they become Naturalized CitiZens of KidZania and earn or save 2 extra kidZos on every activity they complete. The more kidZos earned or saved = the more activities they can enjoy. When kids earn 30 stamps, they’ll become Distinguished CitiZens and will earn or save 4 extra KidZos per activity. And when they earn 60 stamps, they’ll become Honorable CitiZens of KidZania, earning and saving 6 extra KidZos per activity. The more activities they complete, the more benefits they’ll earn and the more fun they’ll have on their very next visit!
-									</p>
-									<p>
-										KidZanians are special because they always try to do their best and they always earn benefits!
-									</p>
-								</section><!-- / -->
-								<section class="clearfix">
-									<p>
-										Here’s a great way to know what you’ll earn as a CitiZen:
-									</p>
-									<div class="badges-container clearfix">
-										<ul class="badges-cols clearfix">
-											<li class="naturalized">
-												<div class="badge-col-inner">
-													<h4 class="badge-col-heading">Naturalized<br>CitiZen</h4>
-													<p>Upon<br>enrollment</p>
-													<img class="img-responsive" src="assets/img/naturalized_level.gif" />
-												</div><!-- /badge-col-inner -->
-											</li>
-											<li class="distinguished">
-												<div class="badge-col-inner">
-													<h4 class="badge-col-heading">Distinguished<br>CitiZen</h4>
-													<p>Achieved after<br>30 stamps</p>
-													<img class="img-responsive" src="assets/img/distinguished_level.gif" />
-												</div><!-- /badge-col-inner -->
-											</li>
-											<li class="honorable">
-												<div class="badge-col-inner">
-													<h4 class="badge-col-heading">Honorable<br>CitiZen</h4>
-													<p>Achieved after<br>60 stamps</p>
-													<img class="img-responsive" src="assets/img/honorable_level.gif" />
-												</div><!-- /badge-col-inner -->
-											</li>
-										</ul>
-									</div><!-- /badges-container -->
-								</section><!-- / -->
+                                 <div id="pazz-container" class="clearfix"  style="background:url(assets/img/pazzport-bg.jpg) no-repeat" > <!-- PAZZPORT container  -->
+                                  	<ul id="pazz-content" class="clearfix"><!--Passport top module-->
+                                            <li class="pazz-col-inner">
+                                                <div>
+                                                <img src="assets/img/logo-pazzport.png" class="pazz-img">
+                                                </div>
+                                                <div>
+                                                <img src="assets/img/pazzport-character1.jpg" class="pazz-img">
+                                                </div>
+                                            </li>
+                                            
+                                            <li class="pazz-col-inner">
+                                          <div>
+                                          <h4 class=""><span>Passport Nº</span> SCL2S70JIII01</h4>
+                                          </div>
+                                              <ul id="" class="clearfix pazz-content" >
+                                                  <li class="pazz-col-sm">
+                                                  <h5 class="pazz-label">Name:</h5>
+                                                  <p>Juanita Pérez</p>
+                                                  <h5 class="pazz-label">Surname:</h5>
+                                                  <p>Juanita</p>
+                                                  <h5 class="pazz-label">Nationality:</h5>
+                                                  <p>KidZanian</p>
+                                                  <h5 class="pazz-label">Country of birth:</h5>
+                                                  <p>Mexico</p>
+                                                  <h5 class="pazz-label">Date of Birth:</h5>
+                                                  <p>12/08/2008</p>
+                                                  </li>
+                                                  <li class="pazz-col-sm">
+                                                  <h5 class="pazz-label">Park issued:</h5>
+                                                  <p>Santa Fe</p>
+                                                  <h5 class="pazz-label">Date of issue:</h5>
+                                                  <p>01/01/2014</p>
+                                                  <h5 class="pazz-label">Expiration date:</h5>
+                                                  <p>01/01/2014</p>
+                                                  </li>
+                                                  </ul>
+                                              </li>
+                                  	</ul><!--Passport top module END-->
+                                    
+                                  <div class="clearfix"><!--Passport bottom module-->
+                                      <div class="pazz-col-inner pazz-label-bottom">
+                                      <p><strong>CitiZenship Level</strong></p>
+                                      </div>
+                                      <div class="pazz-col-inner pazz-result">
+                                      <p><strong>NATURALIZED</strong></p>
+                                      </div>
+                                      
+                                  </div>
+                                  
+                                  
+                                  <div class="clearfix">
+                                      <div class="pazz-col-inner pazz-label-bottom">
+                                      <p><strong>Total visited Establishments</strong></p>
+                                      </div>
+                                      <div class="pazz-col-inner pazz-result">
+                                      <p><strong>10</strong></p>
+                                      </div>
+									<div class="odd"></div>
+                                  </div>
+                                  
+                                  <div class="clearfix">
+                                      <div class="pazz-col-inner pazz-label-bottom">
+                                      <p><strong>To achieve Distinguished level</strong></p>
+                                      </div>
+                                      <div class="pazz-col-inner pazz-result">
+                                      <p><strong>20</strong></p>
+                                      </div>
+                                  </div>
+                                       <div class="pazz-line"></div>
+                                  <div class="">
+                                      <div class="pazz-col-inner pazz-label-bottom">
+                                      <p><strong>kidZos balance</strong></p>
+                                      </div>
+                                      <div class="pazz-col-inner pazz-result">
+                                      <p><strong>00.00</strong></p>
+                                      <div>Bar code SCL2S70JIII01</div>
+                                      </div> 
+                                      <div class="odd"></div>
+                                      
+                                  </div><!--Passport bottom module END-->                          
+                      			</div><!-- END PAZZPORT container -->
 							</div><!-- /col-main-inner -->
 						</div><!-- /col-main -->
 					</div><!-- /wrap -->
