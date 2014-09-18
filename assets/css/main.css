@@ -2576,7 +2576,13 @@ hr {
 		width:585px;	
 			}
 	
-
+	.kidzo-icon
+	{
+		position: absolute;
+		display:block;
+		width: 31px;
+		height: 28px;
+		}
 
 
 /* 0176 =================================================== */
@@ -2636,11 +2642,75 @@ hr {
 		}
 	}
 
-/* 480 =================================================== */
+/* 320 =================================================== */
 @media only screen and (max-width: 320px) {
 	
-	.odd{
-			width:350px;
-			margin: 5px 5px;	
+#pazz-container{
+	   
+	   height:auto;
+	   max-width:100%;
+	   }
+	   
+	.pazz-content{
+		width:100%;
+		height:350px;
 		}
+		
+		
+	.pazz-line{
+		
+		margin-right: auto;
+		margin-left: auto;
+		}
+	
+	.pazz-col-inner{
+	
+		padding: 20px;
+		float: none;
+		width:auto;
+		padding:20px;
+		}
+		
+.pazz-col-sm{
+		
+		
+		float:left;
+		line-height: normal !important;
+		width:40%;
+	
+		}
+		
+	.pazz-img{
+		width:80%;
+		height:auto;
+		padding-bottom: 50px;
+		}
+		
+	.pazz-label{
+		color: #AF2242;
+		font-size: 0.83em;
+		margin:0;
+		}
+
+	.pazz-label-bottom{
+		color: #AF2242 !important;
+		text-align:left;
+		font-size: 1.3em;
+		margin:0;
+		}
+		
+	.pazz-result{
+		color:#333 !important;
+		text-align:center;
+		font-size: 1.3em;
+		margin:0;
+		}
+
+	.odd{
+		background: rgb(200, 54, 54); /* The Fallback */
+   		background: rgba(200, 54, 54, 0.9);
+		height:1px;
+		width:250px;	
+			}
+	
 }
