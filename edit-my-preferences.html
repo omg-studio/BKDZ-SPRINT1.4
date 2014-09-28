@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr"> <!--<![endif]-->
 	<head>
-		<title>Kid registration | B·KidZanian</title>
+		<title>My preferences | B·KidZanian</title>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="author" content="KidZania" />
@@ -74,6 +74,9 @@
 										<li class="nav-item">
 											<a href="faqs.html">Help</a>
 										</li>
+                                        <li class="nav-item">
+											<a href="index.html">Sign out</a>
+										</li>
 									</ul>
 								</nav><!-- /main-nav -->
 							</div><!-- /wrap -->
@@ -81,61 +84,74 @@
 					</div><!-- /top-bar-inner -->
 				</div><!-- /top-bar -->
 				<div class="master-content">
-					<div class="registration-steps-container kid-registration-container">
+					<div class="registration-steps-container my-preferences-container">
 						<div class="wrap wrap-registration clearfix">
-					
-							<form id="kid-registration" method="post" action="#" novalidate>
 							
-                                
-                                
-								<fieldset class="rights-keeper-fields">
-								
-									<div class="rights-keeper-container">
-										
-									</div><!-- /rights-keeper-container -->
-									<div class="kid-tokens-container">
-										<div class="form-row">
-											<div class="form-group">
-                                            
-									<legend class="login-legend-2">Log in to your account</legend>
-									
-												<label for="kidUsername">Email</label>
-												<div class="required-container">
-													<input id="loginUsername" class="form-control required" type="text" name="kidUsername" placeholder="Enter your email address" maxlength="50" required />
-												</div><!-- /required-container -->
-												<div class="error-container"></div>
-											</div><!-- /form-group -->
-										</div><!-- /form-row -->
-										<div class="form-row">
-											<div class="form-group">
-												<label for="kidPassword">Password</label>
-												<div class="required-container">
-													<input id="loginPassword" class="form-control required" type="password" name="kidPassword" placeholder="Enter your password" maxlength="16" required />
-												</div><!-- /required-container -->
-												<div class="error-container"></div>
-                                                    <div class="form-row" style="padding:10px;">
-										
-										<a href=""> Forgot your password?</a>
-										
-									</div>
-                                                    <!-- /form-row -->
-											</div><!-- /form-group -->
-										</div><!-- /form-row -->
-									</div><!-- /kid-tokens-container -->
-                                    		
-                                        
-                                    
-                                    
-									<div class="form-row save-continue-container">
-										<!-- div class="form-group" -->
-											<button id="step-3" class="btn btn-default save-continue" type="submit">Log in</button>
-										<!-- /div --><!-- /form-group -->
+							<form id="my-preferences" method="post" action="#" novalidate>
+								<fieldset class="my-preferences-fields">
+									<legend>Change my preferences</legend>
+									<p>I want to recieve the following <strong>KidZania</strong> updates emails at user@mail.com</p>
+									<p>Your info is safe with us! Please read our <a href="#">Privacy Policy</a></p>
+                                    <div class="form-row save-continue-container" style="padding:0 0 30px;">
+										<button id="done" class="btn btn-secondary " type="submit">Change my email</button>							<a href="#">Unsubscribe</a>
+									</div><!-- /form-row -->
+									<div class="form-row updates clearfix">
+										<div class="form-group">
+											<input name="updates" type="checkbox" id="updates" checked />
+											<label class="label-inline" for="updates">B·KidZanian Updates</label>
+											<p>Get news, discounts and offerings exclusively at KidZania</p>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+									<div class="form-row updates clearfix">
+										<div class="form-group">
+											<input name="partnerUpdates" type="checkbox" id="partnerUpdates" checked />
+											<label class="label-inline" for="partnerUpdates">KidZania Partner Updates</label>
+											<p>Get news, discounts and offerings from KidZania on behalf of our select Industry Partners</p>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+									<div class="form-row preferred-location-row clearfix">
+										<div class="form-group">
+											<label>For tailored offers in your area, select your preferred KidZania location</label>
+											<div class="">
+												<div class="select-container-rounded">
+													<select id="preferredLocation" class="required" name="preferredLocation" title="Select preferred location" required>
+														<option value="">Select one</option>
+														<option value="1">Mexico - KidZania Santa Fe</option>
+														<option value="2">Mexico - KidZania Cuicuilco</option>
+														<option value="3">Mexico - KidZania Monterrey</option>
+														<option value="4">Indonesia - Jakarta</option>
+														<option value="5">Portugal - Lisboa</option>
+													</select><!-- /preferredLocation -->
+												</div><!-- /select-container-rounded -->
+											</div><!-- /required-container -->                                         
+                                          
+											<div class="error-container"></div>
+										</div><!-- /form-group -->
 									</div><!-- /form-row -->
                                     
+                                    <div class="form-row preferred-location-row clearfix">
+										<div class="form-group">
+											<label>Select your preferred Language</label>
+											<div class="">
+												<div class="select-container-rounded">
+													<select id="preferredLocation" class="required" name="preferredLocation" title="Select preferred location" required>
+														<option value="">Select language</option>
+														<option value="1">Spanish</option>
+														<option value="2">English</option>
+						
+													</select><!-- /preferredLocation -->
+												</div><!-- /select-container-rounded -->
+											</div><!-- /required-container -->                                         
+                                          
+											<div class="error-container"></div>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
                                     
-                                    
-									<div class="form-row save-continue-container" style="padding-top:15px;">
-										<button id="add-kid" class="btn btn-secondary" type="button">Cancel</button>
+									<div class="form-row save-continue-container">
+										<button id="step-3" class="btn btn-default save-continue" type="submit" >Update info</button>
+									</div><!-- /form-row -->
+                                    <div class="form-row save-continue-container" style="padding-top:10px;">
+										<button id="step-3" class="btn btn-secondary save-continue" type="button">Cancel</button>
 									</div --><!-- /form-row -->
 								</fieldset>
 							</form><!-- /parent-registration -->
@@ -202,7 +218,7 @@
 								</div><!-- /social-media-ftr -->
 							</div><!-- /ftr-divisions -->
 							<div class="copyright">
-								<p>&copy; 2014, KidZania, and all related characters and elements are trademarks of KidZania de México S.A. de C.V. All Rights Reserved. <!-- a href="#">Privacy Policy</a></p -->
+								<p>© 2014 KidZania SAPI de C.V. All rights reserved.</p><!-- a href="#">Privacy Policy</a></p -->
 							</div><!-- /copyright -->
 						</div><!-- /wrap-inner -->
 					</div><!-- /wrap -->

@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr"> <!--<![endif]-->
 	<head>
-		<title>My profile | B·KidZanian</title>
+		<title>My Profile | B·KidZanian</title>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="author" content="KidZania" />
@@ -27,6 +27,14 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/vendor/masterslider/skins/default/style.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/vendor/masterslider/home_slider/style.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/vendor/iCheck/flat.css" />
+        
+        <!-- TEMPORARY FILES FOR THE BARCODE FONT-->
+		<link rel="stylesheet" href="http://azalea.com/web-fonts/Code39Azalea.min.css">
+
+		<!-- /TEMPORARY FILES FOR THE BARCODE FONT-->
+        
+        
+        
 		<!-- ===== All JavaScript at the bottom except for Modernizr ===== -->
 		<!--[if lt IE 9]>
 			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -71,6 +79,9 @@
 										<li class="nav-item">
 											<a href="faqs.html">Help</a>
 										</li>
+                                        <li class="nav-item">
+											<a href="index.html">Sign out</a>
+										</li>
 									</ul>
 								</nav><!-- /main-nav -->
 							</div><!-- /wrap -->
@@ -98,29 +109,29 @@
 										</li>
 									</ul><!-- /secondary-nav-menu -->
 								</nav><!-- /secondary-nav -->
-								<a id="sign-up-btn" class="btn btn-default btn-lg" href="#internal-sign-up-form">Edit my profile</a>
-								<div class="sign-up-collapsible">
+								<a id="edit-parent-info" class="btn btn-default btn-lg" href="edit-parent-information.html">Edit profile</a>
+								<!--<div class="sign-up-collapsible">
 									<form id="internal-sign-up-form" method="post" action="#" novalidate>
 										<fieldset>
 											<legend class="internal-sign-up-legend">Let's get started!</legend>
 											<div class="internal-legend-msg-container">
 												<span class="internal-sign-up-msg internal-legend-msg">Sign-up and enhance your kid's experience</span>
-											</div><!-- /legend-msg-container -->
+											</div><!-- /legend-msg-container ->
 											<div class="form-group">
 												<label class="label-hidden" for="emailSignUp">Enter your e-mail address</label>
 												<input id="emailSignUp" class="form-control" name="emailSignUp" type="text" placeholder="Enter your e-mail address" />
-											</div><!-- /form-group -->
+											</div><!-- /form-group ->
 											<div class="form-group">
 												<label class="label-hidden" for="passwordSignUp">Create a clever password</label>
 												<input id="passwordSignUp" class="form-control" name="passwordSignUp" type="text" placeholder="Create a clever password" />
-											</div><!-- /form-group -->
+											</div><!-- /form-group ->
 											<div class="form-group">
 												<label class="label-hidden" for="confirmPassSignUp">Confirm password</label>
 												<input id="confirmPassSignUp" class="form-control" name="confirmPassSignUp" type="text" placeholder="Confirm password" />
-											</div><!-- /form-group -->
+											</div><!-- /form-group ->
 											<button id="confirm-sign-up" class="btn btn-main btn-lg" type="submit">Continue</button>
 										</fieldset>
-									</form><!-- /internal-sign-up-form -->
+									</form><!-- /internal-sign-up-form ->
 								</div><!-- /sign-up-collapsible -->
 							</div><!-- /col-left-inner -->
 						</div><!-- /col-left -->
@@ -128,7 +139,7 @@
 							<div class="col-main-inner clearfix">
                                  <div id="pazz-container" class="clearfix animated fadeInDown"  style="background:url(assets/img/pazzport-bg.jpg) no-repeat" > <!-- PAZZPORT container  -->
                                   	<ul id="pazz-content" class="clearfix"><!--Passport top module-->
-                                            <li class="pazz-col-inner">
+                                            <li class="pazz-col-inner-sm">
                                                 <div>
                                                 <img src="assets/img/logo-pazzport.png" class="pazz-img img-responsive animated fade">
                                                 </div>
@@ -143,24 +154,28 @@
                                           </div>
                                               <ul id="" class="clearfix pazz-content" >
                                                   <li class="pazz-col-sm">
-                                                  <h5 class="pazz-label">Name:</h5>
-                                                  <p>Juanita Pérez</p>
+                                                  <h5 class="pazz-label">Issued in:</h5>
+                                                  <p>Santa Fe</p>
                                                   <h5 class="pazz-label">Surname:</h5>
                                                   <p>Juanita</p>
                                                   <h5 class="pazz-label">Nationality:</h5>
                                                   <p>KidZanian</p>
-                                                  <h5 class="pazz-label">Country of birth:</h5>
-                                                  <p>Mexico</p>
-                                                  <h5 class="pazz-label">Date of Birth:</h5>
-                                                  <p>12/08/2008</p>
+                                                  <h5 class="pazz-label">Date of birth:</h5>
+                                                  <p>29/APR/2009</p>
+                                                  <h5 class="pazz-label">Date of issue:</h5>
+                                                  <p>29/APR/2009</p>
                                                   </li>
                                                   <li class="pazz-col-sm">
-                                                  <h5 class="pazz-label">Park issued:</h5>
-                                                  <p>Santa Fe</p>
-                                                  <h5 class="pazz-label">Date of issue:</h5>
-                                                  <p>01/01/2014</p>
-                                                  <h5 class="pazz-label">Expiration date:</h5>
-                                                  <p>01/01/2014</p>
+                                                  <h5 class="pazz-label">Gender</h5>
+                                                  <p>Female</p>
+                                                  <!-- Activate if necesary
+                                                  <h5 class="pazz-label">Given names:</h5>
+                                                  <p>Juanita María</p>-->
+                                                  <h5 class="pazz-label">Country of birth:</h5>
+                                                  <p>Mexico</p>
+                                                   <h5 class="pazz-label">Expiration date</h5>
+                                                  <p>29/APR/2015</p>
+                                                  
                                                   </li>
                                                   </ul>
                                               </li>
@@ -168,9 +183,9 @@
                                     
                                   <div class="clearfix"><!--Passport bottom module-->
                                       <div class="pazz-col-inner pazz-label-bottom">
-                                      <p><strong>CitiZenship Level</strong></p>
+                                      <p><strong>CitiZenship type</strong></p>
                                       </div>
-                                      <div class="pazz-col-inner pazz-result">
+                                      <div class="pazz-col-inner-sm pazz-result">
                                       <p><strong>NATURALIZED</strong></p>
                                       </div>
                                       
@@ -181,7 +196,7 @@
                                       <div class="pazz-col-inner pazz-label-bottom">
                                       <p><strong>Total visited Establishments</strong></p>
                                       </div>
-                                      <div class="pazz-col-inner pazz-result">
+                                      <div class="pazz-col-inner-sm pazz-result">
                                       <p><strong>10</strong></p>
                                       </div>
 									<div class="odd"></div>
@@ -191,7 +206,7 @@
                                       <div class="pazz-col-inner pazz-label-bottom">
                                       <p><strong>To achieve Distinguished level</strong></p>
                                       </div>
-                                      <div class="pazz-col-inner pazz-result">
+                                      <div class="pazz-col-inner-sm pazz-result">
                                       <p><strong>20</strong></p>
                                       </div>
                                   </div>
@@ -200,17 +215,20 @@
                                       <div class="pazz-col-inner pazz-label-bottom">
                                       <p><strong>kidZos balance</strong></p>
                                       </div>
-                                      <div class="pazz-col-inner pazz-result">
+                                      <div class="pazz-col-inner-sm pazz-result">
                                       <img class="kidzo-icon" src="assets/img/kidzo-icon.gif">
                                       <p><strong>00.00</strong></p>
-                                      <div>Bar code SCL2S70JIII01</div>
+                                      
                                       </div> 
                                       <div class="odd"></div>
+                                      <div id"barcode" style="font-family:Code39AzaleaFont; font-size:2em; text-align:center;">123267057489</div>
                                       
                                   </div><!--Passport bottom module END-->                          
                       			</div><!-- END PAZZPORT container -->
 							</div><!-- /col-main-inner -->
+                                <a id="edit-btn" class="btn btn-secondary btn-lg" href="pazzport-manager.html" style="margin:20px;">PaZZport manager</a>						
 						</div><!-- /col-main -->
+                        
 					</div><!-- /wrap -->
 				</div><!-- /master-content -->
 				<footer class="master-footer">
@@ -234,7 +252,7 @@
 												<a href="member_guide.html">Program rules</a>
 											</li>
 											<li>
-												<a href="#">Privacy policy</a>
+												<a href="privacy-policy.html">Privacy policy</a>
 											</li>
 										</ul>
 									</div><!-- /span-inner -->
@@ -250,7 +268,7 @@
 												<a href="faqs.html">FAQs</a>
 											</li>
 											<li>
-												<a href="#">My preferences</a>
+												<a href="login.html">My preferences</a>
 											</li>
 										</ul>
 									</div><!-- /span-inner -->
@@ -273,7 +291,7 @@
 								</div><!-- /social-media-ftr -->
 							</div><!-- /ftr-divisions -->
 							<div class="copyright">
-								<p>&copy; 2014, KidZania, and all related characters and elements are trademarks of KidZania de México S.A. de C.V. All Rights Reserved. <!-- a href="#">Privacy Policy</a></p -->
+								<p>© 2014 KidZania SAPI de C.V. All rights reserved.</p><!-- a href="#">Privacy Policy</a></p -->
 							</div><!-- /copyright -->
 						</div><!-- /wrap-inner -->
 					</div><!-- /wrap -->

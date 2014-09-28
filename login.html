@@ -80,24 +80,28 @@
 						</header><!-- /master-header -->
 					</div><!-- /top-bar-inner -->
 				</div><!-- /top-bar -->
-				
-                <div class="master-content">
-		<div class="registration-steps-container kid-registration-container">
-                    <div class="wrap wrap-registration clearfix">
+				<div class="master-content">
+					<div class="registration-steps-container kid-registration-container">
+						<div class="wrap wrap-registration clearfix">
+					
 							<form id="kid-registration" method="post" action="#" novalidate>
-							  <fieldset class="registration-fields">
-									<legend>Login to your account</legend>
-								<div class="form-row">
-										<!-- /form-group -->
-									</div><!-- /form-row --><!-- /form-row -->
-								</fieldset>
-	
+							
+                                
+                                
+								<fieldset class="rights-keeper-fields">
+								
+									<div class="rights-keeper-container">
+										
+									</div><!-- /rights-keeper-container -->
 									<div class="kid-tokens-container">
 										<div class="form-row">
 											<div class="form-group">
+                                            
+									<legend class="login-legend-2">Log in to your account</legend>
+									
 												<label for="kidUsername">Email</label>
 												<div class="required-container">
-													<input id="kidUsername" class="form-control required" type="text" name="kidUsername" placeholder="Enter your email" maxlength="50" required />
+													<input id="loginUsername" class="form-control required" type="text" name="kidUsername" placeholder="Enter your email address" maxlength="50" required />
 												</div><!-- /required-container -->
 												<div class="error-container"></div>
 											</div><!-- /form-group -->
@@ -106,28 +110,38 @@
 											<div class="form-group">
 												<label for="kidPassword">Password</label>
 												<div class="required-container">
-													<input id="kidPassword" class="form-control required" type="password" name="kidPassword" placeholder="Create a clever password" maxlength="16" required />
+													<input id="loginPassword" class="form-control required" type="password" name="kidPassword" placeholder="Enter your password" maxlength="16" required />
 												</div><!-- /required-container -->
 												<div class="error-container"></div>
+                                                    <div class="form-row" style="padding:10px;">
+										
+										<a href=""> Forgot your password?</a>
+										
+									</div>
+                                                    <!-- /form-row -->
 											</div><!-- /form-group -->
 										</div><!-- /form-row -->
-									
-								  </div><!-- /kid-tokens-container -->
+									</div><!-- /kid-tokens-container -->
+                                    		
+                                        
+                                    
+                                    
 									<div class="form-row save-continue-container">
 										<!-- div class="form-group" -->
-											<button id="step-3" class="btn btn-default save-continue" type="submit" >Log in</button>
+											<button id="step-3" class="btn btn-default save-continue" type="submit">Log in</button>
 										<!-- /div --><!-- /form-group -->
 									</div><!-- /form-row -->
-									<!-- div class="form-row save-continue-container">
-										<button id="add-kid" class="btn btn-secondary" type="button" disabled>Add another kid</button>
+                                    
+                                    
+                                    
+									<div class="form-row save-continue-container" style="padding-top:15px;">
+										<button id="add-kid" class="btn btn-secondary" type="button">Cancel</button>
 									</div --><!-- /form-row -->
 								</fieldset>
 							</form><!-- /parent-registration -->
-                            </form>
 						</div><!-- /wrap -->
 					</div><!-- /registration-steps-container -->
 				</div><!-- /master-content -->
-             
 				<footer class="master-footer">
 					<div class="wrap clearfix">
 						<div class="wrap-inner clearfix">
@@ -195,7 +209,7 @@
 					<div id="scroll-top">
 						<a class="ir" href="#">Top</a>
 					</div><!-- /scroll-top -->
-	</footer><!-- /master-footer -->
+				</footer><!-- /master-footer -->
 			</div><!-- /viewport-inner -->
 		</div><!-- /viewport -->
 
