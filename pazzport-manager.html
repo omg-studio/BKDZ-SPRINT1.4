@@ -4,8 +4,8 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr"> <!--<![endif]-->
-	<head>
-		<title>Kid registration | B·KidZanian</title>
+<head>
+		<title>Passport Manager | B·KidZanian</title>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="author" content="KidZania" />
@@ -26,15 +26,38 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/vendor/masterslider/masterslider.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/vendor/masterslider/skins/default/style.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/vendor/masterslider/home_slider/style.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/vendor/bxslider/jquery.bxslider.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/vendor/iCheck/flat.css" />
+       
 		<!-- ===== All JavaScript at the bottom except for Modernizr ===== -->
 		<!--[if lt IE 9]>
 			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 		<![endif]-->
-		<script type="text/javascript" src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript" src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+		<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+        </script>
 	</head>
-	<body id="bkidzanian" class="registration">
+	<body class="Pazzport-manager" id="bkidzanian" onLoad="MM_preloadImages('assets/img/citizen-fold.gif','assets/img/distinguished-fold.gif','assets/img/honorable-fold.gif')">
 		<!--[if lt IE 10]>
 			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
@@ -45,8 +68,6 @@
 				<div class="top-bar">
 					<div class="top-bar-inner">
 						<div class="utility-bar">
-							<div class="utility-bar-inner">
-							</div><!-- /utility-bar-inner -->
 						</div><!-- /utility-bar -->
 						<header class="master-header">
 							<div class="wrap wrap-header clearfix">
@@ -68,7 +89,7 @@
 										<li class="nav-item">
 											<a href="index.html">Home</a>
 										</li>
-										<li class="nav-item">
+										<li id="" class="nav-item">
 											<a href="about.html">General info</a>
 										</li>
 										<li class="nav-item">
@@ -81,66 +102,75 @@
 					</div><!-- /top-bar-inner -->
 				</div><!-- /top-bar -->
 				<div class="master-content">
-					<div class="registration-steps-container kid-registration-container">
-						<div class="wrap wrap-registration clearfix">
-					
-							<form id="kid-registration" method="post" action="#" novalidate>
+				  <div class="wrap clearfix">
 							
-                                
-                                
-								<fieldset class="rights-keeper-fields">
-								
-									<div class="rights-keeper-container">
-										
-									</div><!-- /rights-keeper-container -->
-									<div class="kid-tokens-container">
-										<div class="form-row">
-											<div class="form-group">
+                          <div class="col-pazzport animated fadeInDown">  
+                                        <!--PaZZport LEFT-->
+                                    <div class="pazzport-container clearfix animated">
+                                      <h1 id"kid-1" class="kid-title">Juanito</h1>
+                                       <a href="my-profile.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('citizen','','assets/img/citizen-fold.gif',1)"><img src="assets/img/citizen.gif" class="pazzport-img img-responsive animated pulse" id="citizen"></a>
+<ul class="pazz-btn-cont">
                                             
-									<legend class="login-legend-2">Log in to your account</legend>
-									
-												<label for="kidUsername">Email</label>
-												<div class="required-container">
-													<input id="loginUsername" class="form-control required" type="text" name="kidUsername" placeholder="Enter your email address" maxlength="50" required />
-												</div><!-- /required-container -->
-												<div class="error-container"></div>
-											</div><!-- /form-group -->
-										</div><!-- /form-row -->
-										<div class="form-row">
-											<div class="form-group">
-												<label for="kidPassword">Password</label>
-												<div class="required-container">
-													<input id="loginPassword" class="form-control required" type="password" name="kidPassword" placeholder="Enter your password" maxlength="16" required />
-												</div><!-- /required-container -->
-												<div class="error-container"></div>
-                                                    <div class="form-row" style="padding:10px;">
-										
-										<a href=""> Forgot your password?</a>
-										
-									</div>
-                                                    <!-- /form-row -->
-											</div><!-- /form-group -->
-										</div><!-- /form-row -->
-									</div><!-- /kid-tokens-container -->
-                                    		
-                                        
-                                    
-                                    
-									<div class="form-row save-continue-container">
-										<!-- div class="form-group" -->
-											<button id="step-3" class="btn btn-default save-continue" type="submit">Log in</button>
-										<!-- /div --><!-- /form-group -->
-									</div><!-- /form-row -->
-                                    
-                                    
-                                    
-									<div class="form-row save-continue-container" style="padding-top:15px;">
-										<button id="add-kid" class="btn btn-secondary" type="button">Cancel</button>
-									</div --><!-- /form-row -->
-								</fieldset>
-							</form><!-- /parent-registration -->
-						</div><!-- /wrap -->
-					</div><!-- /registration-steps-container -->
+                 <li class="">
+                                                <a class="btn-send" href="#"></a>
+              </li>
+                                            <li class="">
+                                                <a id="" class="btn-print" href="#"></a>
+                                            </li>
+                                      </ul>
+                                   
+                            </div><!--PaZZport LEFT END-->
+                                      
+                          </div>  
+                          
+                              
+                          <div class="col-pazzport-odd animated fadeInDown">            
+                                       <!--PaZZport CENTRE-->
+                                    <div class="pazzport-container clearfix">
+                                       <h1 id"kid-2" class="kid-title">Juanita</h1>
+                                       <a href="my-profile.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Distinguished','','assets/img/distinguished-fold.gif',1)"><img src="assets/img/distinguished.gif" class="pazzport-img img-responsive animated pulse" id="Distinguished"></a>
+<ul class="pazz-btn-cont">
+                                            
+                 <li class="">
+                                                <a class="btn-send" href="#"></a>
+                                            </li>
+                                            <li class="">
+                                                <a id="" class="btn-print" href="#"></a>
+                                            </li>
+                                      </ul>
+                                  
+                            </div><!--PaZZport CENTRE END-->
+                               
+                    </div>      
+                                
+                           <div class="col-pazzport animated fadeInDown">       
+                                        <!--PaZZport RIGHT-->
+                                    <div class="pazzport-container clearfix">
+                                       <h1 id"kid-3" class="kid-title">Juanita</h1>
+                                       <a href="my-profile.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('honorable','','assets/img/honorable-fold.gif',1)"><img src="assets/img/honorable.gif" class="pazzport-img img-responsive animated pulse" id="honorable"></a>
+<ul class="pazz-btn-cont">
+                                            
+                 <li class="">
+                                                <a class="btn-send" href="#"></a>
+                                            </li>
+                                            <li class="">
+                                                <a id="" class="btn-print" href="#"></a>
+                                            </li>
+                                      </ul>
+                                  
+                             </div><!--PaZZport RIGHT END-->
+                    </div>   
+                             
+				  </div><!-- /wrap -->
+                    
+                    <div class="shadow-divider">
+                    	<img src="assets/img/shadow-divider.jpg" class="img-responsive">
+                    </div> 
+                    		<div class="pazz-bottom-cont">
+                                <a id="ad-child-btn" class="btn btn-default btn-lg animated fadeInRight" href="#">Edit parent profile</a>
+                                <a id="edit-parent-btn" class="btn btn-main btn-lg animated fadeInRight" href="#">Add another kid</a>
+				  </div>
+                     
 				</div><!-- /master-content -->
 				<footer class="master-footer">
 					<div class="wrap clearfix">
@@ -163,7 +193,7 @@
 												<a href="member_guide.html">Program rules</a>
 											</li>
 											<li>
-												<a href="#">Privacy policy</a>
+												<a href="privacy-policy.html">Privacy policy</a>
 											</li>
 										</ul>
 									</div><!-- /span-inner -->
@@ -179,7 +209,7 @@
 												<a href="faqs.html">FAQs</a>
 											</li>
 											<li>
-												<a href="#">My preferences</a>
+												<a href="login.html">My preferences</a>
 											</li>
 										</ul>
 									</div><!-- /span-inner -->
@@ -211,7 +241,7 @@
 					</div><!-- /scroll-top -->
 				</footer><!-- /master-footer -->
 			</div><!-- /viewport-inner -->
-		</div><!-- /viewport -->
+	</div><!-- /viewport -->
 
 
 		<!-- ===== JavaScript ===== -->
@@ -225,5 +255,6 @@
 		<script type="text/javascript" src="assets/js/vendor/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="assets/js/vendor/icheck.min.js"></script>
 		<script type="text/javascript" src="assets/js/main.js"></script>
-	</body><!-- /bkidzanian -->
+       
+</body><!-- /bkidzanian -->
 </html>

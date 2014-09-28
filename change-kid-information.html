@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr"> <!--<![endif]-->
 	<head>
-		<title>Kid registration | B·KidZanian</title>
+		<title>Change kid information | B·KidZanian</title>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="author" content="KidZania" />
@@ -83,58 +83,194 @@
 				<div class="master-content">
 					<div class="registration-steps-container kid-registration-container">
 						<div class="wrap wrap-registration clearfix">
-					
-							<form id="kid-registration" method="post" action="#" novalidate>
-							
-                                
-                                
-								<fieldset class="rights-keeper-fields">
-								
-									<div class="rights-keeper-container">
+							<div class="steps">
+								<h1 class="primary">Change kid's password</h1>
+								 <div class="form-row">
+								   <div class="form-group">
+											<div id="ChangePassword" class="">
+												<input name="change-pw" type="checkbox" required class="required" id="ChangePassword" />
+												<label for="ChangePassword" class="agree-terms-label">I want to change my kid's password</label>
+											</div><!-- /required-container -->
+											<div id="change-pw" class="error-container"></div>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+											
+                                            <div class="kid-tokens-container">
+										<div class="form-row">
+											<div class="form-group">
+												<label for="oldPassword">Old password</label>
+												<div class="">
+													<input id="kidUsername" class="form-control required" type="text" name="kidUsername" placeholder="Enter your old password" maxlength="16" required disabled/>
+												</div><!-- /required-container -->
+												<div class="error-container"></div>
+											</div><!-- /form-group -->
+										</div><!-- /form-row -->
+										<div class="form-row">
+											<div class="form-group">
+												<label for="NewPassword">New password</label>
+												<div class="">
+													<input id="kidPassword" class="form-control required" type="password" name="kidPassword" placeholder="Create a new password" maxlength="16" required disabled/>
+												</div><!-- /required-container -->
+												<div class="error-container"></div>
+											</div><!-- /form-group -->
+										</div><!-- /form-row -->
+										<div class="form-row">
+											<div class="form-group">
+												<label for="PasswordConfirm">Confirm password</label>
+												<div class="">
+													<input id="kidPasswordConfirm" class="form-control required" type="password" name="kidPasswordConfirm" placeholder="Confirm your password" maxlength="16" required  disabled/>
+												</div><!-- /required-container -->
+												<div class="error-container"></div>
+											</div><!-- /form-group -->
+										</div><!-- /form-row -->
+									</div><!-- /kid-tokens-container -->
+									<div class="form-row save-continue-container">
+										<!-- div class="form-group" -->
+											<button id="step-3" class="btn btn-default save-continue" type="submit" disabled>Continue</button>
 										
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+							</div><!-- /steps -->
+							<form id="kid-registration" method="post" action="#" novalidate>
+								<fieldset class="registration-fields">
+									<legend>Change kid information</legend>
+									
+									<div class="form-row">
+										<div class="form-group">
+											<label for="kidFirstName">Kid's first name</label>
+											<div class="">
+												<input id="kidFirstName" class="form-control required" type="text" name="kidFirstName" placeholder="Your kid's first name" required />
+											</div><!-- /required-container -->
+											<div class="error-container"></div>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+									<div class="form-row">
+										<div class="form-group">
+											<label for="kidLastName">Kid's last name</label>
+											<div class="">
+												<input id="kidLastName" class="form-control required" type="text" name="kidLastName" placeholder="Your kid's last name" required />
+											</div><!-- /required-container -->
+											<div class="error-container"></div>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+                                    
+                                 
+									<div class="form-row">
+										<div class="form-group">
+											<label for="kidUserName">Kid's username</label>
+											<div class="">
+												<input id="kidUsertName" class="form-control required" type="text" name="kidUserName" placeholder="Enter a new username" required />
+											</div><!-- /required-container -->
+											<div class="error-container"></div>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+									
+									<div class="form-row">
+										<div class="form-group">
+											<label for="gender">Kid's Gender</label>
+											<div class="">
+												<div class="select-container-rounded">
+													<select id="gender" class="required" name="gender" title="Select gender" required>
+														<option value="">Select kid's gender</option>
+														<option value="girl" selected>Girl</option>
+														<option value="boy">Boy</option>
+													</select><!-- /gender -->
+												</div><!-- /select-container-rounded -->
+											</div><!-- /required-container -->
+											<div class="error-container"></div>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+									<div class="form-row">
+										<div class="form-group">
+											<label for="countryResidence">Kid's country of residence</label>
+											<div class="">
+												<div class="select-container-rounded">
+													<select id="countryResidence" class="required" name="countryResidence" title="Select country of residance" required>
+														<option value="">Select country</option>
+														<option value="mex" selected>Mexico</option>
+													</select><!-- /countryResidence -->
+												</div><!-- /select-container-rounded -->
+											</div><!-- /required-container -->
+											<div class="error-container"></div>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+									<div class="form-row">
+										<div class="form-group">
+											<label for="birth">Kid's country of birth</label>
+											<div class="">
+												<div class="select-container-rounded">
+													<select id="birth" class="required" name="birth" title="Select country of birth" required>
+														<option value="">Select country</option>
+														<option value="mex" selected>Mexico</option>
+													</select><!-- /birth -->
+												</div><!-- /select-container-rounded -->
+											</div><!-- /required-container -->
+											<div class="error-container"></div>
+										</div><!-- /form-group -->
+									</div><!-- /form-row -->
+								</fieldset>
+								<fieldset class="rights-keeper-fields">
+									<legend class="login-legend">Choose a rights keeper</legend>
+									<div class="rights-keeper-container">
+										<ul class="rights-keeper-slider clearfix">
+											<li class="slide">
+												<a href="#">
+													<img class="img-responsive" src="assets/img/rk-avatar-1.gif" alt="" />
+												</a>
+											</li>
+											<li class="slide">
+												<a href="#">
+													<img class="img-responsive" src="assets/img/rk-avatar-2.gif" alt="" />
+												</a>
+											</li>
+											<li class="slide">
+												<a href="#">
+													<img class="img-responsive" src="assets/img/rk-avatar-3.gif" alt="" />
+												</a>
+											</li>
+											<li class="slide">
+												<a href="#">
+													<img class="img-responsive" src="assets/img/rk-avatar-4.gif" alt="" />
+												</a>
+											</li>
+										</ul><!-- /rights-keeper-slider -->
 									</div><!-- /rights-keeper-container -->
 									<div class="kid-tokens-container">
 										<div class="form-row">
 											<div class="form-group">
-                                            
-									<legend class="login-legend-2">Log in to your account</legend>
-									
-												<label for="kidUsername">Email</label>
-												<div class="required-container">
-													<input id="loginUsername" class="form-control required" type="text" name="kidUsername" placeholder="Enter your email address" maxlength="50" required />
+												<label for="kidUsername">Kid's username</label>
+												<div class="">
+													<input id="kidUsername" class="form-control required" type="text" name="kidUsername" placeholder="Create a user name" maxlength="50" required />
 												</div><!-- /required-container -->
 												<div class="error-container"></div>
 											</div><!-- /form-group -->
 										</div><!-- /form-row -->
 										<div class="form-row">
 											<div class="form-group">
-												<label for="kidPassword">Password</label>
-												<div class="required-container">
-													<input id="loginPassword" class="form-control required" type="password" name="kidPassword" placeholder="Enter your password" maxlength="16" required />
+												<label for="kidPassword">Kid's password</label>
+												<div class="">
+													<input id="kidPassword" class="form-control required" type="password" name="kidPassword" placeholder="Create a clever password" maxlength="16" required />
 												</div><!-- /required-container -->
 												<div class="error-container"></div>
-                                                    <div class="form-row" style="padding:10px;">
-										
-										<a href=""> Forgot your password?</a>
-										
-									</div>
-                                                    <!-- /form-row -->
+											</div><!-- /form-group -->
+										</div><!-- /form-row -->
+										<div class="form-row">
+											<div class="form-group">
+												<label for="kidPasswordConfirm">Confirm password</label>
+												<div class="">
+													<input id="kidPasswordConfirm" class="form-control required" type="password" name="kidPasswordConfirm" placeholder="Create a clever password" maxlength="16" required />
+												</div><!-- /required-container -->
+												<div class="error-container"></div>
 											</div><!-- /form-group -->
 										</div><!-- /form-row -->
 									</div><!-- /kid-tokens-container -->
-                                    		
-                                        
-                                    
-                                    
 									<div class="form-row save-continue-container">
 										<!-- div class="form-group" -->
-											<button id="step-3" class="btn btn-default save-continue" type="submit">Log in</button>
+											<button id="step-3" class="btn btn-default save-continue" type="submit" >Update info</button>
+                                       
 										<!-- /div --><!-- /form-group -->
 									</div><!-- /form-row -->
-                                    
-                                    
-                                    
-									<div class="form-row save-continue-container" style="padding-top:15px;">
+									<div class="form-row save-continue-container" style="padding-top:10px;">
 										<button id="add-kid" class="btn btn-secondary" type="button">Cancel</button>
 									</div --><!-- /form-row -->
 								</fieldset>
