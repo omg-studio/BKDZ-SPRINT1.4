@@ -98,6 +98,7 @@ a:hover, a:focus {
 	text-decoration: underline;
 }
 
+
 /* ----- rules-link ----- */
 .rules-link {
 	text-decoration: underline;
@@ -2559,31 +2560,60 @@ hr {
 /* ==========================================================================
    Pazzport manager
    ========================================================================== */
-  .col-pazzport {
-	  width: 33.3333333333%;
-	  float: left;
-	  }
-	
-	.col-pazzport-odd {
-		width: 33.3333333333%;
-	  	float: left;
-		background: #eee;
+   	.row-pazzport{
+		display:block;
+		height: auto;
 		
 		}
 	
+	
+	/*1 pazzports row*/	
+	  .col-pazzport{
+	  width: 100%;
+	  }
+		
+	/*2 pazzports row*/	
+	
+	.col-pazzport-2{
+	  width: 50%;
+	  float: left;
+	  }
+	
+	  /*3 pazzports row*/
+  
+  	.col-pazzport-3{
+	  width: 33.3333333333%;
+	  float: left;
+	  }
+	  
+	.col-pazzport-3:nth-child(even){
+	  width: 33.3333333333%;
+	  float: left;
+	  background:#eee;
+	  }
+	  
+	  
+	 
+	
+   	.pazzport-container {
+	   	margin:0 40% 30px 40%;
+		
+	    }
+		
+	.pazzport-container-2{
+	   	margin:0 29.9% 30px;
+		
+	    }
+		
+	.pazzport-container-3{
+	   	margin:0 20% 30px 20%;
+		
+	    }
+		
 	.kid-title {
 		color:#999;
 		text-align:center;
 		}
-   
-   
-   .pazzport-container {
-	   	margin:0 20% 40px 20%;
-		
-	    }
-		
-
-
 		
    .pazzport-img {
 	   	width:236px;
@@ -2592,67 +2622,15 @@ hr {
 		
 	   }
 	   
+	   
 	   .pazzport-img:hover{
 		
 		-webkit-animation-name: bounce;
  		animation-name: bounce;
 		
-		/*-webkit-filter: drop-shadow(10px 10px 10px #888);
-		-webkit-transition: all 0.3s ease-out;
-		-moz-transition: all 0.3s ease-out;
-		-ms-transition: all 0.3s ease-out;
-    	transition: all 0.3s ease-out;*/
 		} 	
-/*		
-.fold {
-	position: absolute;
-	width: 11%;
-	height: 15%;
-	z-index: 1000;
-	top: 69px;
-	left: 100px;
-    background-image: url("../img/fold.png");
-    background-size: 110%;
 	
 	
-    -webkit-animation: play 1.5s steps(10) infinite;
-       -moz-animation: play 1.5s steps(10) infinite;
-        -ms-animation: play 1.5s steps(10) infinite;
-         -o-animation: play 1.5s steps(10) infinite;
-            animation: play 1.5s steps(10) infinite;
-}
-
-@-webkit-keyframes play {
-   0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@-moz-keyframes play {
-   0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@-ms-keyframes play {
-   0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@-o-keyframes play {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes play {
-   0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-*/
-		
-		
-		
-		
-		
-		
 			 
 	.pazz-btn-cont{
 		width:70%;
@@ -2699,22 +2677,38 @@ hr {
 		
 /* 480 =================================================== */
 @media only screen and (max-width: 480px) {
-		.col-pazzport {
-		width: 100%;
-		min-width:300px;
-		float:left;
+	/*1 pazzports row*/	
+	  .col-pazzport{
+	  width: 100%;
+	  }
 		
-	}
+	/*2 pazzports row*/	
 	
-	.col-pazzport-odd {
-		width: 100%;
-		min-width:300px;
-		float:left;
-
-	}
+	.col-pazzport-2{
+	  width: 100%;
+	  float: none;
+	  }
 	
-   .pazzport-container {
-	   margin:0 25% 40px 25%;
+	  /*3 pazzports row*/
+  
+  .col-pazzport-3{
+	  width: 100%;
+	  float: none;
+	  }
+	
+   	.pazzport-container {
+	   	margin:0 20% 30px 20%;
+		
+	    }
+		
+	.pazzport-container-2{
+	   		margin:0 20% 30px 20%;
+		
+	    }
+		
+	.pazzport-container-3{
+	   	margin:0 20% 30px 20%;
+		
 	    }
 		
 	.pazz-btn-cont{
@@ -2782,7 +2776,7 @@ hr {
 		width:35%;
 		}
 		
-.pazz-col-sm{
+	.pazz-col-sm{
 		
 		display:block;
 		padding: 5px 10px;
@@ -2790,6 +2784,13 @@ hr {
 		line-height: normal !important;
 		width:37%;
 	
+		}
+		
+	.barcode{
+		position: absolute;
+		top: 40%;
+		left: 40%;
+		text-align: center;
 		}
 		
 	.pazz-img{
@@ -2965,17 +2966,27 @@ hr {
 	#resume-head-left{
 		position:relative;
 		display:block;
-		width: 32%;
+		width: 20%;
 		float:left;
 		
 		}
+	
+	#resume-head-center{
+		position:relative;
+		display:block;
+		width: 60%;
+		float:left;
+		padding: 0;
+		
+		}
+		
 		
 	#resume-head-right{
 		position:relative;
 		display:block;
-		width: 65%;
+		width: 20%;
 		float:left;
-		padding: 1% 1.2%;
+		padding: 0;
 		
 		}
 
@@ -3003,6 +3014,16 @@ hr {
 	
 		positon: relative !important;
 		display:block;
+		width:20%;
+		height:160px;
+		float:left;	
+		}
+
+	.resume-content-center
+	{
+	
+		positon: relative !important;
+		display:block;
 		width:60%;
 		height:160px;
 		float:left;	
@@ -3012,7 +3033,7 @@ hr {
 	{
 		positon: relative !important;
 		display:block;
-		width:40%;
+		width:20%;
 		height:160px;
 		float:left;
 		
@@ -3437,11 +3458,13 @@ hr {
     margin-right: auto; }
 
 
-.stamp-disabled {
-	-webkit-opacity: 0.2;
-	-moz-opacity: 0.2;
-	-o-opacity: 0.2;
-	opacity: 0.2;
+.disabled {
+	pointer-events:none;
+	cursor: no-drop;
+	-webkit-opacity: 0.2 !important;
+	-moz-opacity: 0.2 !important;
+	-o-opacity: 0.2 !important;
+	opacity: 0.2 !important;
 	}
 
 /**	Collapsible content */
