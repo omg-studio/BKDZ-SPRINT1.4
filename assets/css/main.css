@@ -1043,13 +1043,117 @@ table {
 	color: #fff;
 }
 
+.nav-item a ul li {
+	color: #F00 !important;
+}
+
+
 #active-main-nav a {
 	color: #de8730;
 	text-decoration: none;
 	cursor: default;
 }
 
+/* The Dropdown Styles */
+/* =================== */
+  
+/* Hide Dropdowns by Default */
+nav ul ul {
+    display: none;
+    position: absolute; top: 58px;
+	
+}
+     
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display:list-item;
+	background-color:#FFF;
+	border-radius: 5px;
+	border:#CCC solid thin;
+	right:10px;
+	top:45px;
+	-webkit-box-shadow: 0 2px 2px #666;
+	-moz-box-shadow: 0 2px 2px #666;
+	box-shadow: 0px 2px 2px #666; 
+}
+/* Display Dropdowns on Focus */
+nav ul li:focus > ul {
+    display:list-item;
+	background-color:#FFF;
+	border-radius: 5px;
+	border:#CCC solid thin;
+	right:10px;
+	top:45px;
+	-webkit-box-shadow: 0 2px 2px #666;
+	-moz-box-shadow: 0 2px 2px #666;
+	box-shadow: 0px 2px 2px #666; 
+}
+
+     
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:120px;
+    float:none;
+    position: relative;
+	border-top:#eee solid 1px;
+}
+
+nav ul ul li a {
+display: block;
+padding: 10px 10px;
+color: #666 !important;
+font-size: 12px !important;
+
+}
+
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content: '▾'; } 
+li > a:only-child:after { content: ''; }  
+
+
 /**/
+
+/* 480 max =================================================== */
+@media only screen and (max-width: 480px) {
+
+
+nav ul li:hover > ul {
+    
+	right:37%;
+	top:150px;
+	
+}
+nav ul li:focus > ul {
+   
+	right:37%;
+	top:150px;
+
+	
+}
+
+}
+
+/* 320 max =================================================== */
+@media only screen and (max-width: 320px) {
+
+
+nav ul li:hover > ul {
+    
+	right:31%;
+
+	
+}
+nav ul li:focus > ul {
+   
+	right:31%;
+
+
+	
+}
+
+}
+
+
 .mktg-panel {
 	min-height: 280px;
 	position: relative;
@@ -1887,8 +1991,7 @@ hr {
 	.badges-cols li:first-child {
 		margin: 0;
 	}
-
-
+	
 }
 
 /* 599 max =================================================== */
@@ -2624,6 +2727,13 @@ hr {
 	   
 	   
 	   .pazzport-img:hover{
+		
+		-webkit-animation-name: bounce;
+ 		animation-name: bounce;
+		
+		} 	
+		
+		.pazzport-img:focus{
 		
 		-webkit-animation-name: bounce;
  		animation-name: bounce;
@@ -3854,8 +3964,8 @@ line-height: 2em;
   }
 
   50% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
   }
 
   100% {
@@ -3872,9 +3982,9 @@ line-height: 2em;
   }
 
   50% {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
   }
 
   100% {
@@ -3895,13 +4005,13 @@ line-height: 2em;
   }
 
   40% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
   }
 
   60% {
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
   }
 }
 
@@ -3913,15 +4023,15 @@ line-height: 2em;
   }
 
   40% {
-    -webkit-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
   }
 
   60% {
-    -webkit-transform: translateY(-15px);
-    -ms-transform: translateY(-15px);
-    transform: translateY(-15px);
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
   }
 }
 
