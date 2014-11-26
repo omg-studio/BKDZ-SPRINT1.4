@@ -715,6 +715,19 @@ table {
 	color:#999  !important;
 	}
 
+.uppercase{
+	text-transform: uppercase;
+	}
+	
+.ellipsis{
+	white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+	}
+
+.word-break{
+	word-break:break-all;
+	}
 
 /* ==========================================================================
    roadblock
@@ -2897,10 +2910,14 @@ hr {
 		}
 		
 	.barcode{
+		display:block;
 		position: absolute;
-		top: 40%;
-		left: 40%;
-		text-align: center;
+		font-family:Code39AzaleaFont; 
+		font-size:2em; 
+		text-align:center; 
+		top: 40%; 
+		left: 45%; 
+		overflow:hidden;
 		}
 		
 	.pazz-img{
@@ -2963,8 +2980,9 @@ hr {
 
 .pazz-img{
 		width:90% !important;
-		
-		}
+	}
+	
+
 }
 
 /* 320 =================================================== */
@@ -3056,7 +3074,10 @@ hr {
 	{
 		padding-left:20%;		}
 
-
+.barcode{
+		position: initial;
+		font-size:1em; 
+		}
 
 
 }
@@ -3611,10 +3632,10 @@ hr {
 .disabled {
 	pointer-events:none;
 	cursor: no-drop;
-	-webkit-opacity: 0.2 !important;
-	-moz-opacity: 0.2 !important;
-	-o-opacity: 0.2 !important;
-	opacity: 0.2 !important;
+	-webkit-opacity: 0.6 !important;
+	-moz-opacity: 0.6 !important;
+	-o-opacity: 0.6 !important;
+	opacity: 0.6 !important;
 	}
 
 /**	Collapsible content */
@@ -4040,4 +4061,7 @@ line-height: 2em;
   animation-name: bounce;
 }
 
+.preloader{
+	-webkit-filter: drop-shadow(2px 2px 4px rgba(0,0,0,1));
+	}
 	
