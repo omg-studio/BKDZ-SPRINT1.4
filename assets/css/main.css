@@ -2789,8 +2789,12 @@ hr {
 	.barcode{
 		position: absolute;
 		top: 40%;
-		left: 40%;
+		left: 45%;
 		text-align: center;
+		font-family:Code39AzaleaFont !important; 
+		font-size:2em; 
+		text-align:center; 
+		overflow:hidden;
 		}
 		
 	.pazz-img{
@@ -2946,6 +2950,14 @@ hr {
 	{
 		padding-left:20%;		}
 
+.barcode{
+		
+		text-align: right;
+		font-family:Code39AzaleaFont !important; 
+		font-size:1.2em; 
+		text-align:center; 
+		overflow:hidden;
+		}
 
 
 
