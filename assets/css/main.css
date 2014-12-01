@@ -3368,6 +3368,23 @@ hr {
 			max-width: 579px;
 }
 			
+/* 768 =================================================== */
+@media only screen and (max-width: 768px) {
+
+	#bank-head-left{
+			width: 45%;
+			
+			}
+	
+		
+		#bank-head-right{
+			width: 55%;
+			
+			}
+	
+}
+
+
 		
 /* 480 =================================================== */
 @media only screen and (max-width: 480px) {
