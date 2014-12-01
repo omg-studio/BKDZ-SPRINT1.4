@@ -2250,6 +2250,10 @@ hr {
 		float: none;
 		
 				}
+				.btn-lg {
+	font-size: 14px;
+}
+
 
 }
 
@@ -2613,8 +2617,8 @@ hr {
 	.kidzania-logo {
 		margin-top: 52px;
 	}
-
-}
+	
+	
 
 /* 992 =================================================== */
 @media only screen and (min-width: 992px) {
@@ -2795,6 +2799,11 @@ hr {
 		width:90%;
 		margin: 0 5%;
 		}
+		
+#edit-parent-info {	
+		font-size: 16px;
+		margin: 5px;
+}
 	
 	} 	
 		
@@ -3498,7 +3507,18 @@ hr {
 			margin: 0 auto;
 			max-width: 579px;
 }
+/* 768 =================================================== */
+@media only screen and (max-width: 768px) {		
+
+#bank-head-left{
+			width: 45%;
 			
+			}
+	#bank-head-right{
+			width: 55%;
+			
+			}
+}
 		
 /* 480 =================================================== */
 @media only screen and (max-width: 480px) {
@@ -3759,14 +3779,9 @@ hr {
 		}	
 
 		
-/* 480 =================================================== */
-@media only screen and (max-width: 480px) {
+/* 780 =================================================== */
+@media only screen and (max-width: 780px) {
 
-.score-txt{
-	
-	display:none;
-	
-	}	
 	
 	
 .left-status-mdl{
