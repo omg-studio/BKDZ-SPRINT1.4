@@ -715,19 +715,6 @@ table {
 	color:#999  !important;
 	}
 
-.uppercase{
-	text-transform: uppercase;
-	}
-	
-.ellipsis{
-	white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis; 
-	}
-
-.word-break{
-	word-break:break-all;
-	}
 
 /* ==========================================================================
    roadblock
@@ -1056,117 +1043,13 @@ table {
 	color: #fff;
 }
 
-.nav-item a ul li {
-	color: #F00 !important;
-}
-
-
 #active-main-nav a {
 	color: #de8730;
 	text-decoration: none;
 	cursor: default;
 }
 
-/* The Dropdown Styles */
-/* =================== */
-  
-/* Hide Dropdowns by Default */
-nav ul ul {
-    display: none;
-    position: absolute; top: 58px;
-	
-}
-     
-/* Display Dropdowns on Hover */
-nav ul li:hover > ul {
-    display:list-item;
-	background-color:#FFF;
-	border-radius: 5px;
-	border:#CCC solid thin;
-	right:10px;
-	top:45px;
-	-webkit-box-shadow: 0 2px 2px #666;
-	-moz-box-shadow: 0 2px 2px #666;
-	box-shadow: 0px 2px 2px #666; 
-}
-/* Display Dropdowns on Focus */
-nav ul li:focus > ul {
-    display:list-item;
-	background-color:#FFF;
-	border-radius: 5px;
-	border:#CCC solid thin;
-	right:10px;
-	top:45px;
-	-webkit-box-shadow: 0 2px 2px #666;
-	-moz-box-shadow: 0 2px 2px #666;
-	box-shadow: 0px 2px 2px #666; 
-}
-
-     
-/* Fisrt Tier Dropdown */
-nav ul ul li {
-	width:120px;
-    float:none;
-    position: relative;
-	border-top:#eee solid 1px;
-}
-
-nav ul ul li a {
-display: block;
-padding: 10px 10px;
-color: #666 !important;
-font-size: 12px !important;
-
-}
-
-/* Change this in order to change the Dropdown symbol */
-li > a:after { content: '▾'; } 
-li > a:only-child:after { content: ''; }  
-
-
 /**/
-
-/* 480 max =================================================== */
-@media only screen and (max-width: 480px) {
-
-
-nav ul li:hover > ul {
-    
-	right:37%;
-	top:150px;
-	
-}
-nav ul li:focus > ul {
-   
-	right:37%;
-	top:150px;
-
-	
-}
-
-}
-
-/* 320 max =================================================== */
-@media only screen and (max-width: 320px) {
-
-
-nav ul li:hover > ul {
-    
-	right:31%;
-
-	
-}
-nav ul li:focus > ul {
-   
-	right:31%;
-
-
-	
-}
-
-}
-
-
 .mktg-panel {
 	min-height: 280px;
 	position: relative;
@@ -2004,7 +1887,8 @@ hr {
 	.badges-cols li:first-child {
 		margin: 0;
 	}
-	
+
+
 }
 
 /* 599 max =================================================== */
@@ -2250,10 +2134,6 @@ hr {
 		float: none;
 		
 				}
-				.btn-lg {
-	font-size: 14px;
-}
-
 
 }
 
@@ -2617,8 +2497,8 @@ hr {
 	.kidzania-logo {
 		margin-top: 52px;
 	}
-	
-	
+
+}
 
 /* 992 =================================================== */
 @media only screen and (min-width: 992px) {
@@ -2749,13 +2629,6 @@ hr {
  		animation-name: bounce;
 		
 		} 	
-		
-		.pazzport-img:focus{
-		
-		-webkit-animation-name: bounce;
- 		animation-name: bounce;
-		
-		} 	
 	
 	
 			 
@@ -2799,11 +2672,6 @@ hr {
 		width:90%;
 		margin: 0 5%;
 		}
-		
-#edit-parent-info {	
-		font-size: 16px;
-		margin: 5px;
-}
 	
 	} 	
 		
@@ -2919,14 +2787,10 @@ hr {
 		}
 		
 	.barcode{
-		display:block;
 		position: absolute;
-		font-family:Code39AzaleaFont; 
-		font-size:2em; 
-		text-align:center; 
-		top: 40%; 
-		left: 45%; 
-		overflow:hidden;
+		top: 40%;
+		left: 40%;
+		text-align: center;
 		}
 		
 	.pazz-img{
@@ -2989,9 +2853,8 @@ hr {
 
 .pazz-img{
 		width:90% !important;
-	}
-	
-
+		
+		}
 }
 
 /* 320 =================================================== */
@@ -3083,10 +2946,7 @@ hr {
 	{
 		padding-left:20%;		}
 
-.barcode{
-		position: initial;
-		font-size:1em; 
-		}
+
 
 
 }
@@ -3507,18 +3367,7 @@ hr {
 			margin: 0 auto;
 			max-width: 579px;
 }
-/* 768 =================================================== */
-@media only screen and (max-width: 768px) {		
-
-#bank-head-left{
-			width: 45%;
 			
-			}
-	#bank-head-right{
-			width: 55%;
-			
-			}
-}
 		
 /* 480 =================================================== */
 @media only screen and (max-width: 480px) {
@@ -3652,10 +3501,10 @@ hr {
 .disabled {
 	pointer-events:none;
 	cursor: no-drop;
-	-webkit-opacity: 0.6 !important;
-	-moz-opacity: 0.6 !important;
-	-o-opacity: 0.6 !important;
-	opacity: 0.6 !important;
+	-webkit-opacity: 0.2 !important;
+	-moz-opacity: 0.2 !important;
+	-o-opacity: 0.2 !important;
+	opacity: 0.2 !important;
 	}
 
 /**	Collapsible content */
@@ -3779,9 +3628,14 @@ hr {
 		}	
 
 		
-/* 780 =================================================== */
-@media only screen and (max-width: 780px) {
+/* 480 =================================================== */
+@media only screen and (max-width: 480px) {
 
+.score-txt{
+	
+	display:none;
+	
+	}	
 	
 	
 .left-status-mdl{
@@ -4000,8 +3854,8 @@ line-height: 2em;
   }
 
   50% {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   100% {
@@ -4018,9 +3872,9 @@ line-height: 2em;
   }
 
   50% {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   100% {
@@ -4041,13 +3895,13 @@ line-height: 2em;
   }
 
   40% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
   }
 
   60% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 }
 
@@ -4059,15 +3913,15 @@ line-height: 2em;
   }
 
   40% {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
   }
 
   60% {
-    -webkit-transform: translateY(-2px);
-    -ms-transform: translateY(-2px);
-    transform: translateY(-2px);
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 }
 
@@ -4076,7 +3930,4 @@ line-height: 2em;
   animation-name: bounce;
 }
 
-.preloader{
-	-webkit-filter: drop-shadow(2px 2px 4px rgba(0,0,0,1));
-	}
 	
