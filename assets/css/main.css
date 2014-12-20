@@ -3963,16 +3963,19 @@ line-height: 2em;
 /* ==========================================================================
 	Preloader
    ========================================================================== */
-
 .preload{
-	margin:auto; 
-	width:300px;
+		position:fixed;
+		margin:auto;
+		top: 0; left: 0; bottom: 20%; right: 0; 
+		width:300px;
+		z-index:5000;
+		top:50%;
 	}
 .preload-img{
-	margin-left:20%;
-	-webkit-filter: drop-shadow(2px 2px 2px #fff);
-	position:relative;
-	bottom:40px;
+		margin-left:20%;
+		-webkit-filter: drop-shadow(0px 0px 15px #fff);
+		position:absolute;
+		bottom:40px;
 	}
 .preload-txt{
 		color: white;
@@ -3984,10 +3987,9 @@ line-height: 2em;
 		1px 1px 0 #000;
 		font-size:1.8em;
 		font-weight:bolder;
-		text-align:center; 
-		top:295px; 
-		z-index:1000; 
 		position:relative;
+		top:150px; left: 40%; bottom: 20%; right: 0;
+	
 		}
 	
 	
