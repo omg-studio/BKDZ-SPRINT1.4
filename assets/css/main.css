@@ -3959,4 +3959,37 @@ line-height: 2em;
   animation-name: bounce;
 }
 
+
+/* ==========================================================================
+	Preloader
+   ========================================================================== */
+
+.preload{
+	margin:auto; 
+	width:300px;
+	}
+.preload-img{
+	margin-left:20%;
+	-webkit-filter: drop-shadow(2px 2px 2px #fff);
+	position:relative;
+	bottom:40px;
+	}
+.preload-txt{
+		color: white;
+		text-shadow:
+		3px 3px 0 #000,
+		-1px -1px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+		font-size:1.8em;
+		font-weight:bolder;
+		text-align:center; 
+		top:295px; 
+		z-index:1000; 
+		position:relative;
+		}
+	
+	
+	
 	
